@@ -8,6 +8,7 @@
 */
 
 import router from '@adonisjs/core/services/router'
-import TablesController from '#controllers/tables_controller'
 
-router.get('/tables/:value1/:value2?/:fibonacci?', [TablesController, 'index'])
+router.get('/', async () => {
+  return { hello: 'world' }
+})
